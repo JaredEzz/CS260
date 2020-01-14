@@ -1,7 +1,48 @@
-h1, p {
-  background-color: #DDE0E3;
+h1 {
+    background-color: #DDE0E3;
+    color: #090167;
+    letter-spacing: 4px;
 }
 
-em, strong {
-  background-color: #B2D6FF;
+h2{
+    background-color: #ff8a6d;
+}
+
+em {
+    background-color: #79bb8f;
+}
+
+.past {
+
+    color: dimgrey;
+}
+
+.current {
+
+    color: #27bb60;
+}
+
+.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffafed;
+}
+
+.bar li {
+    float: left;
+}
+
+.bar a {
+    display: block;
+    color: #2b2c30;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.bar li a:hover {
+    background-color: #9f96ff;
 }
