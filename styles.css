@@ -1,48 +1,53 @@
-h1 {
-    background-color: #DDE0E3;
-    color: #090167;
-    letter-spacing: 4px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2{
-    background-color: #ff8a6d;
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
 }
 
-em {
-    background-color: #79bb8f;
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
 }
 
-.past {
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
 
-    color: dimgrey;
-}
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
 
-.current {
+  .menu {
+    /*border: 1px solid #fff;  !* For debugging *!*/
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    color: #27bb60;
-}
+  .links {
+    /*border: 1px solid #fff;  !* For debugging *!*/
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffafed;
-}
-
-.bar li {
-    float: left;
-}
-
-.bar a {
-    display: block;
-    color: #2b2c30;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.bar li a:hover {
-    background-color: #9f96ff;
+  .login {
+    margin-left: 20px;
+  }
 }
